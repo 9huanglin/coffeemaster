@@ -1,9 +1,7 @@
-import { defineConfig } from 'vite';
-import react from '@vitejs/plugin-react';
-
+// vite.config.ts
 export default defineConfig({
+  base: '/coffeemaster/', // 替换为您的仓库名称
   plugins: [react()],
-  base: './', // 关键配置：确保资源在子路径下也能加载
   build: {
     outDir: 'dist',
   },
